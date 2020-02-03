@@ -64,11 +64,10 @@ def main():
         for province in jsondata:
             showProvinceInfo(province)
     else:
-        for index in range(6):
+        for index in range(5):
             province = jsondata[index]
             provinceName = province.get('provinceShortName')
-            if provinceName not in additionProvinceName:
-                showProvinceInfo(province)
+            showProvinceInfo(province)
     
     print('---广东省份数据---')
 
